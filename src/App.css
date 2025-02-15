@@ -117,6 +117,12 @@ input::placeholder {
   box-shadow: rgb(67, 181, 246) 0px 0px 0px 2px
 }
 
+.fake-input-box:empty::before {
+  content: "Digite ou insira informações";
+  color: #aaa;
+  pointer-events: none;
+}
+
 .form-field {
   display: flex;
   flex-direction: column;
