@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('./fonts/ProximaNova-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('./fonts/Proxima\ Nova\ Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('./fonts/Proxima\ Nova\ Alt\ Regular\ Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.App {
+  text-align: center;
+  font-family: 'proxima-nova', 'Montserrat', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px
+}
+
+#imageContainer {
+  margin: 25px;
+  height: 600px;
+  width: 800px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  background-color: #F7F7F7
+}
+
+#formContainer {
+  margin: 25px;
+}
+
+.formParent {
+  text-align: start;
+}
+
+.action-field {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+.field-header {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 8px;
+  align-items: center
+}
+
+.field-name {
+  color: rgb(97, 111, 127);
+  font-size: 1rem;
+}
+
+.field-required {
+  color: rgb(169, 181, 187);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.field-input {
+  width: 80%
+}
+
+.fake-input-box {
+  box-shadow: rgb(221, 225, 228) 0px 0px 0px 1px;
+  background-color: white;
+  width: 100%;
+  padding: 12px 16px;
+  height: 26px;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: rgb(63, 76, 94);
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+input::placeholder {
+  color: rgb(63, 76, 94);
+  opacity: 0.333;
+  font-size: 1rem
+}
+
+.fake-input-box:hover {
+  border-color: transparent;
+  box-shadow: rgb(67, 181, 246) 0px 0px 0px 1px
+}
+
+.fake-input-box:focus {
+  outline: 0px;
+  box-shadow: rgb(67, 181, 246) 0px 0px 0px 2px
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-field input {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.form-field label {
+  margin-bottom: 2px
+}
+
+.form-field button {
+  height: 28px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 6px 13px;
+  align-self: flex-end;
+  background-color: rgba(67, 181, 246, 0.063);
+  border: 2px solid rgb(67, 181, 246);
+  border-radius: 5px;
+  color: rgb(67, 181, 246);
+  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.form-field button:hover {
+  background-color: rgba(67, 181, 246, 0.125);
+  color: rgb(67, 181, 246);
+  border-color: #40a9ff;
+}
+
+.form-field button:active {
+  color: #096dd9;
+  border-color: #096dd9
+}
+
+.required-flag {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.isreq {
+  color: rgb(237, 84, 98)
+}
+
+.trigger-field {
+  border-radius: 24px;
+  padding: 2px 7px;
+  color: white;
+  display: flex;
+  align-items: center
+}
+
+.trigger-field-logo {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.trigger-field-name {
+  padding: 0px 5px;
+}
+
+.delete-button {
+  background-color: transparent;
+  color: rgb(246, 248, 249);
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+  display: flex;
+  align-items: center
+}
+
+.delete-div {
+  border: 1px solid rgb(246, 248, 249);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  width: 16px;
+}
+
+.delete-div svg {
+  color: rgb(246, 248, 249);
+  width: 10px;
+  height: 10px
+}
