@@ -37,11 +37,13 @@
 
 #imageContainer {
   margin: 25px;
-  height: 600px;
   width: 800px;
   border: 1px solid gray;
   border-radius: 3px;
-  background-color: #F7F7F7
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #formContainer {
@@ -78,7 +80,7 @@
 }
 
 .field-input {
-  width: 80%
+  width: 700px
 }
 
 .fake-input-box {
@@ -86,7 +88,7 @@
   background-color: white;
   width: 100%;
   padding: 12px 16px;
-  height: 26px;
+  height: auto;
   border: 0px;
   border-radius: 5px;
   font-size: 1rem;
@@ -95,6 +97,9 @@
   display: flex;
   align-items: center;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.9
 }
 
 input::placeholder {
@@ -155,10 +160,11 @@ input::placeholder {
   border-color: #096dd9
 }
 
-.required-flag {
+.boolean-flag {
   display: flex;
   font-size: 0.8rem;
   align-items: center;
+  margin-top: 2px
 }
 
 .isreq {
@@ -166,11 +172,14 @@ input::placeholder {
 }
 
 .trigger-field {
+  border: 1px solid rgb(175, 184, 188);
   border-radius: 24px;
-  padding: 2px 7px;
+  padding: 0px 5px;
   color: white;
   display: flex;
-  align-items: center
+  align-items: center;
+  height: 24px;
+  white-space: nowrap
 }
 
 .trigger-field-logo {

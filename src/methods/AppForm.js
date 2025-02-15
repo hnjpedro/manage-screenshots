@@ -32,9 +32,9 @@ class AppForm extends Component {
   render() {
     return <div className="formParent">
       <div className="form-field form-action-field">
-        <label for="actionfield">Selecione o action field</label>
+        <label for="actionfield">Digite o nome do campo</label>
         <input name="actionfield" placeholder="Digite um campo" onChange={(e) => this.props.onFieldChange('actionField', e.target.value)}></input>
-        <div className="required-flag">
+        <div className="boolean-flag">
           <input type="checkbox" onChange={(e) => this.props.onFieldChange('required', e.target.checked)} />Obrigatório
         </div>
       </div>
@@ -53,7 +53,7 @@ class AppForm extends Component {
           onChange={this.handleInputChange}
           value={this.state.inputValue}
         />
-        <div className="custom-flag">
+        <div className="boolean-flag">
           <input type="checkbox" onChange={(e) => this.setState({ isCustomField: e.target.checked })} />Personalizado
         </div>
         <button className="add-field" type="button" onClick={this.handleAddClick}>ADICIONAR</button>
